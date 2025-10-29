@@ -1,0 +1,6 @@
+module TaskGrid
+typeinfo TaskGrid.qmltypes
+prefer :/TaskGrid/
+Main 1.0 qml/TaskGrid/Main.qml
+depends QtQuick
+

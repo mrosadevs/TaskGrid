@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/TaskGrid">/Users/mrosadev/TaskGrid/build/TaskGrid</file>
+
+  </qresource>
+</RCC>
