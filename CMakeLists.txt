@@ -1,43 +1,9 @@
-cmake_minimum_required(VERSION 3.20)
-project(TaskGrid VERSION 0.1.0 LANGUAGES CXX)
+cmake_minimum_required(VERSION 4.0)
+project(Prototype1)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 20)
 
-# Find Qt6 components
-find_package(Qt6 6.4 COMPONENTS Core Gui Qml Quick REQUIRED)
+add_executable(Prototype1 main.cpp
+        EmployeeInfo.h
+        EmployeeInfo.cpp)
 
-qt_standard_project_setup()
-
-# Source files
-set(SOURCES
-  src/main.cpp
-  src/app/App.cpp
-  src/models/TaskModel.cpp
-)
-
-set(HEADERS
-  src/app/App.hpp
-  src/models/TaskModel.hpp
-        main.cpp
-)
-
-qt_add_executable(TaskGrid
-  ${SOURCES}
-  ${HEADERS}
-)
-
-target_include_directories(TaskGrid PRIVATE src)
-
-# QML resources
-qt_add_qml_module(TaskGrid
-  URI TaskGrid
-  VERSION 1.0
-  QML_FILES
-    qml/TaskGrid/Main.qml
-)
-
-target_link_libraries(TaskGrid
-  PRIVATE
-    Qt6::Core Qt6::Gui Qt6::Qml Qt6::Quick
-)
