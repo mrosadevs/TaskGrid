@@ -1,0 +1,17 @@
+﻿# JetBrains / IntelliJ / CLion
+.idea/
+*.iml
+
+# CMake / build artifacts
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.obj
+*.o
+*.exe
+*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
