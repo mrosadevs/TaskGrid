@@ -19,6 +19,7 @@ set(SOURCES
 set(HEADERS
   src/app/App.hpp
   src/models/TaskModel.hpp
+        main.cpp
 )
 
 qt_add_executable(TaskGrid
