@@ -11,5 +11,3 @@ int main()
 
     return 0;
 }
-//test daniel
-//test manuel
