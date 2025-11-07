@@ -83,7 +83,7 @@ The app loads its UI from `qml/TaskGrid/Main.qml` and connects to the backend C+
 
 | Member | Role | Focus |
 |---------|------|--------|
-| **Offline** | UI/UX Lead + Integrator | Figma design, QML UI, animations, cross-platform polish |
+| **Manuel** | UI/UX Lead + Integrator | Figma design, QML UI, animations, cross-platform polish |
 | **Juan** | Core Developer + System Architect | C++ data models, database logic, and architecture |
 | **Daniel** | Developer + UI Logic | Dialogs, signal/slot connections, debugging & testing |
 
@@ -131,4 +131,4 @@ git push -u origin feature/&lt;your-feature&gt;
 
 ### ⭐ Credits  
 Built with 💻, ☕, and a lot of teamwork by  
-**Offline**, **Juan**, and **Daniel** — *Programming II, Fall 2025*.
+**Manuel**, **Juan**, and **Daniel** — *Programming II, Fall 2025*.
