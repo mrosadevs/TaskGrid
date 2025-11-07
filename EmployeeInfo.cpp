@@ -1,12 +1,10 @@
 #include "EmployeeInfo.h"
 #include <iostream>
+using namespace std;
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::getline;
 
-void Person::inputPersonInfo() {
+void Person::inputPersonInfo()
+{
     cout << "Name: ";
     getline(cin, name);
     cout << "Age: ";
@@ -14,12 +12,14 @@ void Person::inputPersonInfo() {
     cin.ignore(); // clear newline
 }
 
-void Person::displayPersonInfo() const {
+void Person::displayPersonInfo() const
+{
     cout << "Name: " << name << endl;
     cout << "Age: " << age << endl;
 }
 
-void Employee::inputEmployeeInfo() {
+void Employee::inputEmployeeInfo()
+{
     inputPersonInfo();
     cout << "Salary: ";
     cin >> salary;
@@ -30,22 +30,30 @@ void Employee::inputEmployeeInfo() {
     getline(cin, employeeID);
 }
 
-void Employee::displayEmployeeInfo() const {
+void Employee::displayEmployeeInfo() const
+{
     displayPersonInfo();
     cout << "Salary: $" << salary << endl;
     cout << "Hours: " << hours << endl;
     cout << "Employee ID: " << employeeID << endl;
 }
 
-void ConfirmInfo::confirmInfo() {
+void ConfirmInfo::confirmInfo()
+{
     int confirm;
     cout << "Is the employee info correct? (1 = Yes, 2 = No): ";
     cin >> confirm;
 
-    if (confirm == 1) cout << "Employee info confirmed." << endl;
-    else if (confirm == 2) cout << "Employee info not confirmed." << endl;
-    else cout << "Invalid choice." << endl;
+    if (confirm == 1)
+        {
+        cout << "Employee info confirmed." << endl;
+        }
+    else if (confirm == 2)
+        {
+        cout << "Employee info not confirmed." << endl;
+        }
+    else
+        {
+        cout << "Invalid choice." << endl;
+        }
 }
-//
-// Created by JUAND on 11/5/2025.
-//

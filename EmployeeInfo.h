@@ -3,8 +3,10 @@
 #define PROTOTYPE1_EMPLOYEEINFO_H
 
 #include <string>
+using namespace std;
 
-class Person {
+class Person
+{
 public:
     std::string name;
     int age;
@@ -13,7 +15,8 @@ public:
     void displayPersonInfo() const;
 };
 
-class Employee : public Person {
+class Employee : public Person
+{
 public:
     long double salary;
     long double hours;
@@ -23,7 +26,8 @@ public:
     void displayEmployeeInfo() const;
 };
 
-class ConfirmInfo : public Employee {
+class ConfirmInfo : public Employee
+{
 public:
     void confirmInfo();
 };
